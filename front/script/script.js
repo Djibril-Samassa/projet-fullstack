@@ -6,7 +6,11 @@ $( () =>{
             url: 'https://restcountries.com/v3.1/all',
             success: function(res){
                 for(let i = 0; i<=res.length;i++){
-                    $(".countries_name")
+                        if( $("#cherchCountry").val() == res[i].name.common){
+                            $(".countries_name").append(`<li>${res[i].name.common} <b> Capitale: </b>${res[i].capital}</li>`)
+                            return;
+                        }
+                    
                 }
             }
         });
