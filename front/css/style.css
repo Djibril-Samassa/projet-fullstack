@@ -1,0 +1,8 @@
+main{
+    background-color:red;
+}
+
+.container{
+    padding: 2em;
+    display: flex;
+}
