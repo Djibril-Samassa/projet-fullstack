@@ -10,6 +10,11 @@ $( () =>{
                             $(".countries_name").append(`<li>${res[i].name.common} <b> Capitale: </b>${res[i].capital}</li>`)
                             return;
                         }
+
+                        else if( $("#cherchCountry").val() == res[i].capital){
+                            $(".countries_name").append(`<li>${res[i].capital} <b> Pays: </b>${res[i].name.common}</li>`)
+                            return;
+                        }
                     
                 }
             }
