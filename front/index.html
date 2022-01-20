@@ -13,17 +13,17 @@
         <form action="">
             <div class="container">
                 <label for="chercher"></label>
-                <input type="text" name="" id="cherchCountry" value="">
-                <button type="button" class="btn btn-primary" id="btnShowData">Show Data</button>
+                <input type="text" name="" id="searchCountry" value="">
+                
                 <div id="radio">
                     <div>
-                        <input type="radio" id="searchbycountryname" name="chByCountry">
-                        <label for="dewey">Cherch by Country Name</label>
+                        <input type="radio" id="searchbycountryname" name="searchbyname">
+                        <label for="searchbycountryname">Search by Country Name</label>
                     </div>
 
                     <div>
-                        <input type="radio" id="searchbycityname" name="chByCapital">
-                        <label for="louie">Cherch by Capital Name</label>
+                        <input type="radio" id="searchbycityname" name="searchbyname">
+                        <label for="searchbycityname">Search by Capital Name</label>
                     </div>
                 </div>
                 
@@ -31,9 +31,12 @@
             
             
         </form>
+
+        <button type="button" class="btn btn-primary" id="btnShowData">Show Data</button>
         <div class="countries_name">
 
         </div>
+
     </main>
     <script src="./script/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
