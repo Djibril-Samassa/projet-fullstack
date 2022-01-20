@@ -12,12 +12,20 @@ $( () =>{
         });
 
     })
-
-    if( $("#searchbycountryname").checked){
-        $("#btnShowData").css("background-color","yellow");
-    }
     
-    else if( $("#searchbycityname").checked){
-        $("#btnShowData").css("background-color","green");
-    }
+
+    $("#searchbutton").click(function searchCountry(res){
+        $.ajax({
+            url: 'https://restcountries.com/v3.1/all',
+            success: function(res){
+                for( let i = 0; i<= res.length;i++){
+                    if($("#searchcountry").val() == res[i].name.common){
+                        
+                    };
+                }
+            }
+        })
+
+    })
+
 })
