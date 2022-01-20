@@ -1,8 +1,7 @@
-main{
-    background-color:red;
+div{
+    padding: 2em;
 }
 
-.container{
-    padding: 2em;
+#radio{
     display: flex;
 }
